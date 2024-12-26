@@ -30,120 +30,133 @@ Publish the website in the LocalHost.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribbble Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      padding: 100px 0;
-    }
-    .hero h1 {
-      animation: fadeIn 2s ease-in-out;
-    }
-    .hero p {
-      animation: fadeIn 2.5s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .navbar {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background: #f8f9fa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: #f5f5f5; color: #333;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #ff6347;">Dribbble Clone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="btn btn-danger btn-sm btn-signup" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Dribbble</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
-        <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Sign Up</a></li>
-      </ul>
+    <div class="hero" style="background-color: #ff6347; color: white; padding: 20px 0;">
+        <div class="container">
+            <h1>What are you working on?</h1>
+            <p>Dribbble is where designers showcase their work and explore creative inspiration.</p>
+            <a href="#" class="btn btn-light">Learn More</a>
+            <a href="#" class="btn btn-dark">Sign Up</a>
+        </div>
     </div>
-  </div>
-</nav>
 
-<div class="hero text-center">
-  <div class="container">
-    <h1 class="display-4">Discover Top Designers</h1>
-    <p class="lead mt-3">Join the world's leading creative community and showcase your projects.</p>
-    <a href="#" class="btn btn-lg btn-light text-primary mt-4">Get Started for Free</a>
-  </div>
-</div>
-
-<div class="container my-5">
-  <h2 class="text-center mb-4">Featured Projects</h2>
-  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="thumb1.webp" class="d-block w-100" alt="Project 1">
-      </div>
-      <div class="carousel-item">
-        <img src="thumb2.webp" class="d-block w-100" alt="Project 2">
-      </div>
-      <div class="carousel-item">
-        <img src="thumb3.webp" class="d-block w-100" alt="Project 3">
-      </div>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Popular Shots</h2>
+        <div class="row gallery">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb1.webp" alt="Shot 1" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>1.2k Likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb2.webp" alt="Shot 2" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>2.1k likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb3.webp" alt="Shot 3" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>5.1k likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb4.webp" alt="Shot 4" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>200 likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb5.webp" alt="Shot 5" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>10.5k likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb6.webp" alt="Shot 6" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>15k likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb7.webp" alt="Shot 7" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>21k likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="thumb8.webp" alt="Shot 8" class="img-fluid">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <i class="fas fa-heart" style="color: #ff6347;"></i>
+                        <p>8k likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-  </div>
-</div>
 
-<div class="container my-5">
-  <h2 class="text-center mb-4">Contact Us</h2>
-  <form>
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <input type="text" class="form-control" placeholder="Your Name" required>
-      </div>
-      <div class="col-md-6 mb-3">
-        <input type="email" class="form-control" placeholder="Your Email" required>
-      </div>
-    </div>
-    <div class="mb-3">
-      <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-    </div>
-    <div class="text-center">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
-</div>
+    <footer id="contact" class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Designed and developed by HARSHUL SL. All rights reserved.</p>
+        </div>
+    </footer>
 
-<footer class="text-center py-4">
-  <div class="container">
-    <p class="mb-2">&copy; 2024 Dribbble Clone. All rights reserved.</p>
-    <p>Designed by Harshul SL</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 ```
 
 ## OUTPUT:
-![alt text](image.png)
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 
 ## RESULT:
